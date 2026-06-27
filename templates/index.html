@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedAdvisor Smart HealthCare</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="title">MedAdvisor</div>
+    <div class="subtitle">Smart HealthCare</div>
+  </div>
+  <div class="header-right" id="headerRight"></div>
+</header>
+
+<div class="chat-container center">
+
+  <div id="chat"></div>
+
+  <div class="input-area" id="inputArea">
+    <textarea id="input" rows="1" placeholder="Enter disease name..." autocomplete="off"></textarea>
+    <div class="action-buttons" id="actionButtons" style="display:none;">
+      <button id="saveBtn" class="action-btn">💾 Save Result</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="saveModal" class="modal hidden">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">✕</button>
+    <h3>Result Saved!</h3>
+    <p>Your medicine recommendation has been saved to your dashboard.</p>
+    <a href="/dashboard" class="modal-btn">View Dashboard</a>
+  </div>
+</div>
+
+<script src="/static/notification.js"></script>
+<script src="/static/auth.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>

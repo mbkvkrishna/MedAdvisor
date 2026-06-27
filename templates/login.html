@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — MedAdvisor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="title">MedAdvisor</div>
+    <div class="subtitle">Smart HealthCare</div>
+  </div>
+  <div class="header-right">
+    <a href="/" class="header-btn">← Back to Home</a>
+  </div>
+</header>
+
+<div class="chat-container center">
+  <div class="auth-container">
+
+    <h2 class="auth-title" id="authTitle">Login</h2>
+    <p class="auth-subtitle" id="authSubtitle">Welcome back — sign in to your account</p>
+
+    <div class="auth-form">
+
+      <div id="nameRow" style="display:none;">
+        <input type="text" id="name" placeholder="Your name"
+               autocomplete="name" class="auth-input" />
+      </div>
+
+      <div id="emailRow">
+        <input type="email" id="email" placeholder="Email address"
+               autocomplete="email" class="auth-input" />
+      </div>
+
+      <div id="passwordRow">
+        <input type="password" id="password" placeholder="Password"
+               autocomplete="current-password" class="auth-input" />
+      </div>
+
+      <button id="submitBtn" class="auth-button">Login</button>
+
+      <div id="message" class="auth-message hidden"></div>
+
+      <p class="auth-footer">
+        <span id="toggleText">Don't have an account?</span>
+        <button id="toggleMode" class="link-btn">Sign up</button>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<script src="/static/auth.js"></script>
+<script src="/static/login.js"></script>
+
+</body>
+</html>

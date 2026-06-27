@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — MedAdvisor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="title">MedAdvisor</div>
+    <div class="subtitle">Dashboard</div>
+  </div>
+  <div class="header-right" id="headerRight"></div>
+</header>
+
+<div class="dashboard-container">
+
+  <div class="sidebar">
+    <button id="backBtn" class="sidebar-btn">← Back to Home</button>
+    <button id="logoutBtn" class="sidebar-btn danger">Logout</button>
+    <button id="deleteAccountBtn" class="sidebar-btn danger">Delete Account</button>
+  </div>
+
+  <div class="dashboard-content">
+    <h2>Your Saved Results</h2>
+    <div id="savedResults" class="results-grid" style="display:none;"></div>
+    <div id="emptyState" class="empty-state" style="display:none;">
+      <p>No saved results yet. Head to the home page and save your medicine recommendations!</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="/static/notification.js"></script>
+<script src="/static/auth.js"></script>
+<script src="/static/dashboard.js"></script>
+
+</body>
+</html>
